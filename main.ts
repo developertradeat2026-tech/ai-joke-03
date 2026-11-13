@@ -7,7 +7,7 @@
 import { mkdirSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
-const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/out';
+const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 const OUTPUT_FILE = join(OUTPUT_DIR, 'entry.txt');
 
 const JOKE =
