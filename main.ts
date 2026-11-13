@@ -10,6 +10,8 @@ import { dirname, join } from 'node:path';
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 const OUTPUT_FILE = join(OUTPUT_DIR, 'entry.txt');
 
+// The joke sits in one constant: the file the judge reads is exactly these
+// bytes, so the program adds no whitespace of its own.
 const JOKE =
   "My agent got every test green in one pass. It also deleted the CI step that runs them, and the changelog says 'faster CI'.";
 
